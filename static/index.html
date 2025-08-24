@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+	 <link rel="stylesheet" href="resources/bootstrap/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="resources/style.css"> 
+</head>
+
+
+<body>
+	<section id="top">
+		<div class="inline-row">
+			<div class="col-2">
+				<div class="month-week">
+					<button class="month-week-button">Month/Week</button>
+				</div>
+			</div><div class="col-8">
+				<div class="date-box">
+					<button id="previous-month">
+						<span class="material-symbols-outlined">≪</span>
+					</button>
+					<h1 id="current-date"></h1>
+					<button id="next-month">
+						<span class="material-symbols-outlined">≫</span>
+					</button>
+				</div>
+			</div><div class="col-2">
+				<div class="create-pattern">
+					<button class="create-pattern-button">Create Pattern</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="calendar">
+		<div class="calendar-row">
+			<div class="week-number">
+				<ul class="week-list">
+					<li><button class="week-1 calendar-item"><h3>week 1</h3></button></li>
+					<li><button class="week-2 calendar-item"><h3>week 2</h3></button></li>
+					<li><button class="week-3 calendar-item"><h3>week 3</h3></button></li>
+					<li><button class="week-4 calendar-item"><h3>week 4</h3></button></li>
+					<li><button class="week-5 calendar-item"><h3>week 5</h3></button></li>
+				</ul>
+			</div>
+			<div class="calendar-grid">
+				<div class="day-names">
+					<h3 class="sunday">Sunday</h3>
+					<h3 class="monday">Monday</h3>
+					<h3 class="tuesday">Tuesday</h3>
+					<h3 class="wednesday">Wednesday</h3>
+					<h3 class="thursday">Thursday</h3>
+					<h3 class="friday">Friday</h3>
+					<h3 class="saturday">Saturday</h3>
+				</div>
+				<div class="individual-days">
+					<div class="day box-0">
+						<p class="date-number">0</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-1">
+						<p class="date-number">1</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-2">
+						<p class="date-number">2</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-3">
+						<p class="date-number">3</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-4">
+						<p class="date-number">4</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-5">
+						<p class="date-number">5</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-6">
+						<p class="date-number">6</p>
+                        <p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-7">
+						<p class="date-number">7</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-8">
+						<p class="date-number">8</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-9">
+						<p class="date-number">9</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-10">
+						<p class="date-number">10</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-11">
+						<p class="date-number">11</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-12">
+						<p class="date-number">12</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-13">
+						<p class="date-number">13</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-14">
+						<p class="date-number">14</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-15">
+						<p class="date-number">15</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-16">
+						<p class="date-number">16</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-17">
+						<p class="date-number">17</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-18">
+						<p class="date-number">18</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-19">
+						<p class="date-number">19</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-20">
+						<p class="date-number">20</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-21">
+						<p class="date-number">21</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-22">
+						<p class="date-number">22</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-23">
+						<p class="date-number">23</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-24">
+						<p class="date-number">24</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-25">
+						<p class="date-number">25</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-26">
+						<p class="date-number">26</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-27">
+						<p class="date-number">27</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-28">
+						<p class="date-number">28</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-29">
+						<p class="date-number">29</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-30">
+						<p class="date-number">30</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-31">
+						<p class="date-number">31</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-32">
+						<p class="date-number">32</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-33">
+						<p class="date-number">33</p>
+						<p class="day-event">thing happening</p>
+					</div>
+					<div class="day box-34">
+						<p class="date-number">34</p>
+						<p class="day-event">thing happening</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="upcoming-events">
+				<h2>Upcoming Events:</h2>
+				<ol class="upcoming-list" class="date-number">
+					<li class="upcoming- clas="day-event"individual">thing 1</li>
+					<li class="upcoming-individual">thing 2</li>
+					<li class="upcoming-individual">thing 3</li>
+					<li class="upcoming-individual">thing 4</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+    
+    <section id="event-popup-section">
+        <div id="event-popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span id="close-popup" class="close-btn">&times;</span>
+                <h3 id="popup-date"></h3> <!-- This will show the date dynamically -->
+                <form id="event-form">
+                    <label for="event-description">Event Description:</label>
+                    <input type="text" id="event-description" required>
+
+                    <label for="event-urgency">Urgency (1-5):</label>
+                    <input type="number" id="event-urgency" min="1" max="5" required>
+
+                    <label for="event-time">Event Time (HH:MM):</label>
+                    <input type="time" id="event-time" required>
+
+                    <button type="submit">Save Event</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="resources/script.js"></script>
+    <script src="resources/database.js"></script>
+	<script src="resources/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

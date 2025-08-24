@@ -1,0 +1,331 @@
+@font-face {
+	font-family: 'Audiowide';
+	src: url('fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+button {
+	color: white;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+html {
+	background-color: #00111f;
+	/*background-color: black; */
+	font-family: 'Audiowide', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+
+}
+
+body {
+	background-color: #00111f; 
+	font-family: 'Audiowide', sans-serif;
+	font-style: italic;
+	color: #ffffff; 
+	opacity: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+#top {
+	width: 100vw;
+	height: 19vh;
+	display: flex;
+	justify-content: center;
+}
+
+.inline-row {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.month-week {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	height: 20vh;
+}
+
+.material-symbols-outlined {
+	cursor: normal;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 70px;
+	display: inline-block;
+	vertical-align: middle;
+	text-shadow: 3px 3px 0px #89fbff, 
+                  6px 6px 0px #46b59b, 
+                  9px 9px 0px #017e7f, 
+                  12px 12px 0px #422269,
+		  15px 15px 0px #201258;
+}
+
+.date-box {
+	color: white;
+	font-family: 'Audiowide', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 20vh;
+}
+
+.create-pattern {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	height: 20vh;
+}
+
+.date-box h1 {
+	color: white;
+	font-size: 90px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-shadow: 3px 3px 0px #89fbff, 
+                  6px 6px 0px #46b59b, 
+                  9px 9px 0px #017e7f, 
+                  12px 12px 0px #422269,
+		  15px 15px 0px #201258;
+}
+
+#calendar {
+	height: 80vh;
+}
+
+.calendar-row {
+	display: grid;
+	grid-template-columns: 1fr 7fr 2fr;
+}
+	
+.calendar-item {
+	padding: 10px;
+	text-align: center;
+}
+
+.week-number {
+	height: 75vh;
+	margin-top: 5vh;
+}
+
+.week-1 {
+	color: #acffd6;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+	transition: text-decoration 0.3s ease;
+}
+
+.week-1 :hover {
+	text-decoration: underline;
+	text-underline-offset: 6px;
+}
+
+.week-2 {
+	color: #95f3ff;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.week-3 {
+	color: #74a0f2;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.week-4 {
+	color: #6b4af0;
+	text-shadow: 1px 1px 2px red, 0 0 1em teal, 0 0 0.2em teal;
+}
+
+.week-5 {
+	color: #cb74f2;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.calendar-grid{
+	height: 80vh;
+}
+
+.upcoming-events {
+	padding-top: 5vh;
+	text-align: center;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.week-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 75vh;
+}
+
+.sunday {
+	color: white;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.monday {
+	color: #f8c1e2;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.tuesday {
+	color: #f461b9;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.wednesday {
+	color: #e161f4;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.thursday {
+	color: #ae7df6;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.friday {
+	color: #a6cdfa;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.saturday {
+	color: #beeefc;
+	text-shadow: 1px 1px 2px red, 0 0 1em #e161f4, 0 0 0.2em #e161f4;
+}
+
+.day-names {
+	padding: 0; margin: 0;
+	display: flex;
+	flex-direction: inline;
+	height: 5vh;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.individual-days {
+	height: 75vh;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: space-around;
+	align-items: center;
+}
+
+.day {
+	margin: 1px;
+	padding: 10px;
+	height: 15vh;
+	border: 2px solid white;
+	box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+	border-radius: 17px;
+	transition: border 0.3s ease;
+}
+
+.current-day {
+    background-color: indigo;
+    border: 2px solid hotpink;
+}
+
+.adjacent-day {
+    border: 2px solid purple;
+    background-color: black;
+}
+
+.individual-days :hover {
+	border: 2px groove red;
+}
+
+.individual-days * :hover {
+	border: none;
+}
+
+.upcoming-events h2 {
+	font-size: 50px;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.upcoming-list {
+	font-size: 25px;
+	padding-top: 5vh;
+}
+
+.upcoming-individual{
+	padding: 2vh;
+}
+
+/* Basic Popup Styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999;
+}
+.popup.show {
+    display: flex;
+}
+
+.popup-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    height: 430px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -215px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
